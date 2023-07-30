@@ -1,0 +1,324 @@
+.active {
+  color: white;
+}
+#trip #tripValue{
+  width: 70px;
+  font-size: 20px;
+  background: rgb(173, 34, 34);
+  color: white;
+  border: none;
+}
+#trip b {
+  font-size: 20x;
+}
+#trip {
+  padding-top: 11px;
+  font-size: 12px;
+  margin-left: 26rem;
+  border-right: 1px maroon solid;
+  border-left: 1px maroon solid;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  margin: 0;
+}
+.menu-bar .list {
+  margin-left: 10rem;
+}
+.menu-bar .list ul li {
+  display: inline-block;
+  font-size: 18px;
+  font-family: monospace;
+  margin: 0px 4px;
+  padding: 1.4rem;
+  border-left: 1px maroon solid;
+}
+.menu-bar {
+  width: 100%;
+  color: silver;
+  display: inline-block;
+  background-color: rgb(173, 34, 34);
+}
+.logo {
+  margin: 40px;
+  margin-left: 200px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 4fr 1.5fr;
+  grid-template-rows: 1fr 7.5fr 1.5fr 0.5fr;
+  height: 150vh;
+  grid-template-areas:
+    "header header header header"
+    "blank main main blank2"
+    "footer footer footer footer"
+    "footer2 footer2 footer2 footer2";
+  grid-gap: 4px;
+  background-color: #f4f5f9;
+}
+.header {
+  background-color: white;
+  grid-area: header;
+  border: 1px solid rgba(206, 204, 204, 0.363);
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 4fr 1.5fr;
+  grid-template-areas: "headerblank seattitle skipbutton headerblank2";
+}
+.headerblank {
+  grid-area: headerblank;
+}
+.seattitle {
+  margin: auto;
+  margin-left: 0;
+  grid-area: seattitle;
+}
+.seattitle img {
+  height: 2.5rem;
+  border: 1px solid rgb(8, 8, 92);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.seattitle span {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+.skipbutton {
+  grid-area: skipbutton;
+  display: flex;
+  justify-content: flex-end;
+}
+.skipbutton button,
+.gobackbutton button {
+  margin-right: 0;
+  padding: 1rem 2rem;
+  color: rgb(8, 8, 92);
+  border: 1px solid rgb(8, 8, 92);
+  font-size: 1rem;
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+}
+.skipbutton button:hover,
+.gobackbutton button:hover,
+.continuebutton button:hover {
+  background-color: rgb(8, 8, 92);
+  color: white;
+}
+.headerblank2 {
+  grid-area: headerblank2;
+}
+.main {
+  background-color: white;
+  grid-area: main;
+  display: grid;
+  font-family: "Open Sans", sans-serif;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 1fr 14fr;
+  grid-template-areas:
+    "name info"
+    "seatinfo seatarrangement";
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(172, 171, 171, 0.245);
+  grid-area: name;
+  border-left: 2px solid rgb(146, 14, 14);
+}
+#nam {
+  background-color: rgba(172, 171, 171, 0.021);
+  border: none;
+  color: rgb(8, 8, 92);
+  font-size: 1.2rem;
+}
+#flightdate{
+  width: 80px;
+  border: none;
+  font-size: 15px;
+}
+#flightdate,
+#flight {
+  color: rgb(181, 11, 11);
+  font-weight: bold;
+}
+#flightsrc {
+  margin-left: 0.6rem;
+}
+#flightsrc,#flightdest{
+  width: 90px;
+  font-size: 18px;
+  border: none;
+}
+#flightsrc,
+#flightdest {
+  color: rgb(8, 8, 92);
+  font-weight: bold;
+}
+.info a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(206, 204, 204, 0.363);
+  grid-area: info;
+  padding: 0 2rem;
+}
+.seatinfo {
+  background-color: #f4f5f9;
+  grid-area: seatinfo;
+  display: flex;
+  flex-direction: column;
+}
+.seatinfo h4 {
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.seatinfo ul {
+  list-style-type: none;
+}
+.seatinfo ul li {
+  padding: 0.4rem;
+}
+.seatinfo ul li div {
+  display: inline-flex;
+}
+.seatarrangement {
+  border: 1px solid rgba(206, 204, 204, 0.363);
+  grid-area: seatarrangement;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.seatcontainer {
+  display: grid;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  grid-gap: 2rem;
+}
+.seatsection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8px;
+}
+.seat {
+  border: 1px solid rgba(0, 0, 0, 0.664);
+  border-radius: 2px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.seat:not(.booked):hover {
+  color: white;
+  border-color: rgb(8, 8, 92);
+  background-color: rgb(8, 8, 92);
+  height: 31px;
+  width: 41px;
+}
+.selected {
+  background-color: rgb(8, 8, 92);
+  color: white;
+}
+.frontrow {
+  color: green;
+  border-color: green;
+}
+.window {
+  color: skyblue;
+  border-color: skyblue;
+}
+.exitrow {
+  color: red;
+  border-color: red;
+}
+.booked {
+  color: grey;
+  border-color: grey;
+}
+.bassinet {
+  color: yellow;
+  border-color: yellow;
+}
+.blank {
+  grid-area: blank;
+}
+.footer {
+  background-color: white;
+  grid-area: footer;
+  border: 1px solid rgba(206, 204, 204, 0.363);
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 4fr 1.5fr;
+  grid-template-areas: "footerblank gobackbutton continuebutton blackblank2";
+}
+button {
+  margin: 2rem;
+}
+.footer2 {
+  grid-area: footer2;
+  background-color: #f4f5f9;
+}
+.footerblank {
+  grid-area: footerblank;
+}
+.gobackbutton {
+  margin-left: 0;
+  grid-area: gobackbutton;
+  /* display: flex;
+  align-items: flex-start; */
+}
+.gobackbutton button {
+  margin-left: 0;
+  background-color: rgb(8, 8, 92);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+}
+.gobackbutton button:hover {
+  color: rgb(8, 8, 92);
+  background-color: white;
+  border: 1px solid rgb(8, 8, 92);
+}
+.continuebutton {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0;
+  grid-area: continuebutton;
+}
+.continuebutton button {
+  background-color: rgb(146, 14, 14);
+  color: white;
+  border: none;
+  padding: 0.2rem 4rem;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+
+  transition: all 0.4s ease-in-out;
+}
+.continuebutton button:hover {
+  color: rgb(146, 14, 14);
+  background-color: white;
+  border: 1px solid rgb(146, 14, 14);
+}
+.footerblank2 {
+  grid-area: footerblank2;
+}
+.footer2 div {
+  margin-left: 16%;
+}
+.footer2 div h5 {
+  color: grey;
+  font-family: sans-serif;
+  font-weight: lighter;
+}

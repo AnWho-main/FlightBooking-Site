@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;500&family=Varela&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./preloader.css">
+    <title>payement</title>
+  </head>
+  <body onload="store()">
+    <div class="pre-loader">
+      <div>
+        <img src="./images/p1.jpg" alt="" />
+      </div>
+      <div id="gif">
+        <img src="./images/808.gif" alt="" />
+        <h2>Please Wait we are processing your request</h2>
+      </div>
+    </div>
+    <script src="./preloader.js"></script>
+    <div class="section1">
+      <div class="logo">
+        <img src="./images/logoMain.png" alt="please check!" />
+      </div>
+
+      <!-- Menu bar -->
+      <div class="menu-bar">
+        <div class="list">
+          <ul type="none">
+            <li class="active">SEARCH</li>
+            <li class="active">FLIGHT</li>
+            <li class="active">PASSENGERS</li>
+            <li class="active">SEATS</li>
+            <li class="active">PAYMENT</li>
+            <li id="trip">
+              TRIP SUMMARY <br />INR<b><input value=" 0" id="tripValue"/> <i class="fas fa-angle-down"></i> </b>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="pcontainer">
+      <div class="title">
+        <div>
+          <div id="icon"><i class="fas fa-credit-card"></i></div>
+          <span>PAYMENT</span>
+        </div>
+      </div>
+      <div class="details">
+        <div>
+          <div id="flightinfo">
+            <div id="date">
+              <span
+                >JAN <br/>2022 <br/> ></span
+              >
+            </div>
+            <div id="info">
+              <div id="flightid">
+                <h5><i class="fas fa-plane-departure"></i>AI887</h5>
+              </div>
+              <div id="middiv">
+                <span id="srctime">16:10
+                </span>
+                <img
+                  src="./images/pament-line.png"
+                  alt=""
+                />
+                <span id="desttime">23:55</span>
+              </div>
+              <div id="lastdiv">
+                <span id="src">STR</span>
+                <span id="dest">END</span>
+              </div>
+            </div>
+            <div id="confirm">Confirmed</div>
+          </div>
+          <div id="finame">
+            <div id="img">
+              <i class="fas fa-male"></i>
+            </div>
+            <div id="namediv"><span><input value="UNKNOWN" disabled id="na"/></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div>
+          <div class="infotitle">
+            <div id="exlogo">
+              <img src="./images/img_208894.png" alt="" />
+            </div>
+            <div id="logodetails">
+              <h3>DANGEROUS GOODS</h3>
+              <p>
+                Dangerous Goods are FORBIDDEN for Carrieage on Person, in Hand
+                baggage or Check-in baggage on board an aircraft, for safety
+                reasons. The following are mere representative examples of
+                Prohibited Dangerous Goods.
+              </p>
+            </div>
+          </div>
+          <div class="infoimg">
+            <div>
+              <img src="./images/dg-1.png" alt="" />
+              <h4>Explosives</h4>
+            </div>
+            <div>
+              <img src="./images/dg-2.png" alt="" />
+              <h4>Flammable Solids</h4>
+            </div>
+            <div>
+              <img src="./images/dg-3.png" alt="" />
+              <h4>Radioactive Material</h4>
+            </div>
+            <div>
+              <img src="./images/dg-4.png" alt="" />
+              <h4>Flammable Gas</h4>
+            </div>
+            <div>
+              <img src="./images/dg-5.png" alt="" />
+              <h4>Flammable Liquid</h4>
+            </div>
+            <div>
+              <img src="./images/dg-6.png" alt="" />
+              <h4>Oxidizer</h4>
+            </div>
+            <div>
+              <img src="./images/dg-7.png" alt="" />
+              <h4>Corrosives</h4>
+            </div>
+            <div>
+              <img src="./images/dg-8.png" alt="" />
+              <h4>Toxics Substances</h4>
+            </div>
+            <div>
+              <img src="./images/dg-9.png" alt="" />
+              <h4>Magnetised Material</h4>
+            </div>
+            <div>
+              <img src="./images/dg-10.png" alt="" />
+              <h4>Misc Dangerous</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section3">
+        <div id="paymentoption">
+          <div class="option">
+            <div id="option1">Credit Card</div>
+            <div id="option2">UPI</div>
+          </div>
+          <div class="paymentForm">
+
+            <div id="creditcard" class="show-creditcard">
+              <center>
+      <div id="main">
+<input type="text" placeholder="Card Number"><br>
+<legend>
+    Expiration Date
+    <input type="date" placeholder="MM/YY">
+</legend>
+&nbsp;<input type="text" placeholder="CVV/CVC"><br>
+<input type="text" placeholder="Card Holder Name"><br>
+<label>Street Address<input type="text" placeholder="Address Line 1"><br>
+    <input type="text" placeholder="Address Line 2"><br>
+    <input type="text" placeholder="City">&nbsp;<input type="number" placeholder="pin code"><br>
+    <input type="text" placeholder="Enter State">&nbsp;<input type="text" placeholder="Country"><br>
+    <h3>Do u want to pay in Card Currency?</h3>
+    <span>if turned on u can process Dynamic Currency Conversion(DCC) for this card.</span>  
+    <!-- Rounded switch -->
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label
+
+
+</label>
+</div>
+</center>
+
+            </div>
+
+            <div id="upi" class="hide-upi">
+              <div id="main">
+    <div id="f2">Popular PSPs<br>
+   <span id="s1"><img src="gpay.jpg" height="80px" width="130px"></span>&nbsp;
+   <span id="s2"><img src="bhemupi.jpg" height="80px" width="130px"></span>&nbsp;
+   <span id="s3"><img src="phonepay.jpg" height="80px" width="130px"></span><br>
+   <span id="s4"><img src="paytm.jpg" height="80px" width="130px"></span>&nbsp;
+   <span id="s5"><img src="amazonepay.jpg" height="80px" width="130px"></span>&nbsp;
+   <div id="s6"><img  id="t2" src="otherVPA.png" height="80px" width="130px"></div>
+    <p>Virtual Payment Address(VPA)</p><br>
+    <input type="text" id="t1">
+</div>
+</div>
+            </div>
+
+            <div class="paybutton">
+              <button onclick="pay()" >PAY</button>
+            </div>
+          </div>
+        </div>
+        <div id="bookingsummary">
+          <div id="sbheader">
+        <div><h2>BOOKING SUMMARY</h2></div>
+      </div>
+          <div id="pricedetails">
+          <div>
+            <div><h2>FARES & FEES</h2></div>
+            <div><h4>Fares</h4></div>
+            <div><h4>Charge and Fees</h4></div>
+            <div><h4>Taxes</h4></div>
+          </div>
+          <div id="div2">
+            <div>
+              <h6><a href="">View Breakdown</a></h6>
+            </div>
+            <div><span >INR <input value="0" id="far"/></span></div>
+            <div><span>INR <input value="0" id="cha"/></span></div>
+            <div><span>INR <input value="0" id="tax"></span></div>
+          </div>
+        </div>
+         <div id="sbfooter">
+        <div class="div1">
+          <h3>BOOKING<br />TOTAL</h3>
+        </div>
+        <div class="div2">
+          <div>INR</div>
+          <div id="total"><input value="0" id="btotal"/></div>
+        </div>
+      </div>
+        </div>
+      </div>
+      <div class="footer">
+        <button onclick="pre()" class="gobackbtn">Go Back</button>
+        <button class="cancelbtn" onclick="cancl()">CANCEL</button>
+      </div>
+      <div class="footer2">
+        <div>
+        <h5>
+          Copyright © 2022 Air India Ltd. All rights reserved. Use of this
+          website indicates your compliance with our Privacy Policy, Conditions
+          of Carriage, FAQ's, Terms and Conditions
+        </h5>
+      </div>
+      </div>
+    </div>
+
+<!-- slider -->
+<div class="sdiv">
+  <div id="menu" class="sidemenu">
+    <!-- <a href="#" id="closebtn">&times;</a> -->
+    <div id="sbheader">
+      <div id="closebtn">
+        <i class="fas fa-caret-left closeIcon"></i>
+      </div>
+      <div><h2>BOOKING SUMMARY</h2></div>
+    </div>
+    <div id="sbmain">
+      <div id="flightdetails">
+        <div class="div1">
+          <span id="flightdate">20<br/>22</span>
+        </div>
+        <div class="div2">
+          <div id="flightid"><i class="fas fa-plane-departure"></i>AI887</div>
+          <div>
+            <span id="sdivsrctime">16:10</span>
+            <img
+              src="./images/pament-line.png"
+              alt=""
+            />
+            <span id="sdivdesttime">23:55</span>
+          </div>
+          <div>
+            <span id="src">ST</span>
+            <span id="dest">EN</span>
+          </div>
+        </div>
+      </div>
+      <div id="pricedetails">
+        <div>
+          <div><h2>FARES & FEES</h2></div>
+          <div><h4>Fares</h4></div>
+          <div><h4>Charge and Fees</h4></div>
+          <div><h4>Taxes</h4></div>
+        </div>
+        <div id="div2">
+          <div>
+            <h6><a href="">View Breakdown</a></h6>
+          </div>
+          <div><span id="fares">INR <input value="0" id="sa" /></span></div>
+          <div><span id="chargeandfees">INR <input value="0" id="sb" /></span></div>
+          <div><span id="taxes">INR <input value="0" id="sc" /></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sbfooter">
+      <div class="div1">
+        <h3>BOOKING<br />TOTAL</h3>
+      </div>
+      <div class="div2">
+        <div>INR</div>
+        <div id="total"><input value="0" id="slidetotal" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="./payment.js"></script>
+  </body>
+</html>

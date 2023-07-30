@@ -1,0 +1,121 @@
+*{ 
+    font-size: 14px;
+    margin-left: 15px;
+    padding: 5px; 
+    font-family: droid_sansregular,sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+input{
+    /* font-size: 17px; */
+    width: 190px;
+    height: +15px;
+    border-radius: 5%;
+    /* margin-right: +10px; */
+}
+#t1{
+    margin: 50px;
+}
+
+#header{
+    margin-top: -35px;
+    margin-left: -100px;
+    margin-right: -22px;
+    background: none repeat scroll 0 0 #c32026;
+    box-shadow: 0 2px 2px #777;
+    height: 35px;
+}
+#t2{
+    margin: 50px;   
+}
+
+#t3{
+    display: block;
+    font-size: 14px;
+    font-family: droid_sansbold,sans-serif,Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+#t4{
+    margin-top: 0px;
+    display: inline;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+#f1{
+    margin-right: 100px;
+    border: 2px solid silver;
+    opacity: .7;
+}
+
+#f2{
+    margin-left: 0px;
+    width: 190px;
+    height: +15px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#t6{
+    margin-left: 220px;
+    font-size: 20px;
+    scrollbar-color: orange;
+}
+#f3{ width: 190px;
+    height: +15px;
+    /* margin-bottom: +10px; */
+    /* margin-left: 0px; */
+    margin-top: 40px;
+    font-size: 20px;
+}
+#t7{
+    margin-left: 200px;
+    font-size: 20px;
+}
+#f4{
+    margin-top: 50px;
+    margin-left: 0px;
+    font-size: 20px;
+    }
+#t8{
+    margin-left: 56px;
+    font-size: 12px;
+}
+#f5,#f7,#f10,#f12,#f15,#f18,#f20,#f22,#f25,#f27,#f29,#f31{
+    margin-left: 550px;
+    font-size: 15px;
+    margin-bottom: 40px;
+    margin-top: -85px;
+}
+#f4,#f6,#f8,#f9,#f11,#file,#f14,#f16,#f19,#f21,#f23,#f24,#f26,#f28,#f30,#f32,#f33,#f38,#f39{
+    /* margin-left: 550px; */
+    font-size: 15px;
+    /* margin-bottom: 40px; */
+    /* margin-top: -85px; */
+}
+#p2{
+    margin-top: -2px;
+    color: blue;
+    font-size: 20px;
+    margin-left: -2px;
+}
+#p1{
+    margin-top: -5px;
+    color: blue;
+    font-size: 24px;
+    margin-left: -2px;
+}
+#f6{
+    margin-top: -5px;
+    margin-left: +2px;
+    font-size: 20px;  
+}
+#t9,#t11,#t14,#t16,#t19,#t21,#t22,#t23,#t28,#t30,#t32,#t34{
+    margin-top: -50px;
+    margin-left: 260px;
+    font-size: 15px;
+}
+#b1{
+    margin-top: -50px;
+}
+#t38,#t39{
+    padding: 0%;
+
+}

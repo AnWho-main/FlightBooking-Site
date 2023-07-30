@@ -1,0 +1,681 @@
+/* for slider */
+body {
+  font-family: sans-serif;
+  transition: all 0.6s;
+}
+.sdiv #s1,#s2,#s3{
+  width: 40px;
+  border: none;
+  background-color: white;
+}
+.sdiv #slidetotal{
+  width: 100px;
+  border: none;
+  font-size: 26px;
+}
+.sdiv #mainbox {
+  font-size: 26px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.sdiv .sidemenu {
+  position: fixed;
+  background-color: white;
+  top: 20px;
+  right: 0px;
+  width: 0;
+  height: 95%;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.5s;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(7, 7, 39);
+}
+.sdiv .show-sidebar {
+  width: 38%;
+}
+/* .blur {
+  background-color: rgba(0, 0, 0, 0.61);
+} */
+.sdiv #closebtn {
+  width: 10%;
+  height: 100%;
+  display: inline-block;
+  cursor: pointer;
+  border-right: 1px solid rgba(168, 167, 167, 0.322);
+}
+.sdiv #sbtitle {
+  color: rgb(7, 7, 39);
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-left: 3rem;
+  font-weight: 500;
+}
+.sdiv .closeIcon {
+  color: rgb(7, 7, 39);
+  margin: 0 20px;
+  margin-top: 24px;
+  font-size: 3rem;
+}
+.sdiv .sidemenu {
+  display: flex;
+  flex-direction: column;
+}
+.sdiv #sbheader {
+  height: 100px;
+  width: auto;
+  border-bottom: 1px solid rgba(168, 167, 167, 0.322);
+  display: flex;
+  align-items: center;
+}
+.sdiv #sbheader h2 {
+  margin-left: 20px;
+}
+.sdiv #sbmain {
+  height: 520px;
+  border-bottom: 1px solid rgba(168, 167, 167, 0.322);
+}
+.sdiv #flightdetails {
+  border: 1px solid rgb(7, 7, 39);
+  height: 100px;
+  width: 85%;
+  margin-top: 50px;
+  margin-left: 42px;
+  display: flex;
+}
+.sdiv #flightdetails .div1 {
+  width: 15%;
+  text-align: center;
+  background-color: rgb(7, 7, 39);
+  color: white;
+  padding-top: 18px;
+}
+#sa ,#sb, #sc{
+  width: 40px;
+  border: none;
+}
+#far ,#cha , #tax{
+  width: 40px;
+  border: none;
+}
+#btotal{
+  font-size: 1.4rem;
+  width: 80px;
+  border: none;
+}
+.sdiv #flightdetails .div2 {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sdiv #flightdetails .div2 > div {
+  height: 31%;
+}
+.sdiv #flightid {
+  color: maroon;
+  padding-bottom: 0;
+  padding-left: 25px;
+}
+.sdiv #flightdetails img {
+  width: 250px;
+}
+#sdivdesttime {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+#sdivsrctime {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.sdiv #src {
+  float: left;
+  margin-left: 20px;
+}
+.sdiv #dest {
+  float: right;
+  margin-right: 24px;
+}
+.sdiv #pricedetails {
+  height: 160px;
+  width: 85%;
+  margin-top: 40px;
+  margin-left: 42px;
+  display: flex;
+  flex-direction: row;
+}
+.sdiv #pricedetails > div {
+  width: 50%;
+}
+.sdiv #pricedetails > div > div {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.sdiv #div2 > div {
+  justify-content: flex-end;
+}
+.sdiv a {
+  color: maroon;
+  text-decoration: none;
+}
+.sdiv #sbfooter {
+  width: 85%;
+  height: 95px;
+  margin-left: 42px;
+  display: flex;
+}
+.sdiv #sbfooter .div1 {
+  width: 50%;
+  color: maroon;
+}
+.sdiv #sbfooter .div2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sdiv #total {
+  margin-left: 8px;
+  font-size: 2rem;
+}
+/* slider end */
+
+* {
+  margin: 0;
+}
+.section1 .active {
+  color: white;
+}
+#trip #tripValue{
+  width: 70px;
+  font-size: 20px;
+  background: rgb(173, 34, 34);
+  color: white;
+  border: none;
+}
+#trip b {
+  font-size: 20x;
+}
+#trip {
+  padding-top: 11px;
+  font-size: 12px;
+  margin-left: 26rem;
+  border-right: 1px maroon solid;
+  border-left: 1px maroon solid;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  margin: 0;
+}
+/* body {
+  background-color: #f4f5f9;
+} */
+.section1 .menu-bar .list {
+  margin-left: 10rem;
+}
+.section1 .menu-bar .list ul li {
+  display: inline-block;
+  font-size: 18px;
+  font-family: monospace;
+  margin: 0px 4px;
+  padding: 1.4rem;
+  border-left: 1px maroon solid;
+}
+.section1 .menu-bar {
+  width: 100%;
+  color: silver;
+  display: inline-block;
+  background-color: rgb(173, 34, 34);
+}
+.section1 .logo {
+  margin: 40px;
+  margin-left: 200px;
+}
+.pcontainer {
+  height: 100vh;
+}
+.title {
+  background-color: white;
+  height: 20vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title #icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: 2px solid rgb(5, 5, 31);
+  color: rgb(5, 5, 31);
+  padding-top: 0.7rem;
+  text-align: center;
+  margin-right: 10px;
+}
+.title span {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+}
+.details {
+  background-color: #f4f5f9;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(201, 201, 201, 0.534);
+}
+.details > div {
+  background-color: moccasin;
+  display: flex;
+  padding-top: 20px;
+}
+.details #flightinfo {
+  width: 650px;
+  height: 100px;
+  border: 1px solid rgb(5, 5, 31);
+  color: rgb(5, 5, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+.details #flightinfo #date {
+  width: 150px;
+  color: white;
+  background-color: rgb(5, 5, 31);
+  font-family: "Open Sans", sans-serif;
+  padding: 18px;
+}
+#flightinfo {
+  background: white;
+}
+.details #info {
+  width: 450px;
+  height: 76%;
+  border: 1px solid rgb(5, 5, 31);
+  padding: 12px;
+  background: white;
+}
+.details #info div {
+  width: 450px;
+  height: 32%;
+}
+#info img {
+  width: 300px;
+}
+#srctime,
+#desttime {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+#src {
+  float: left;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+#dest {
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+#middiv {
+  background: white;
+}
+#lastdiv {
+  background: white;
+}
+#flightid {
+  color: maroon;
+  background: white;
+}
+.details #confirm {
+  width: 250px;
+  text-align: center;
+  color: rgb(13, 201, 13);
+  font-family: "Open Sans", sans-serif;
+  background: white;
+}
+.details #finame {
+  width: 400px;
+  height: 50px;
+  margin-left: 20px;
+  border: 1px solid grey;
+  display: flex;
+  text-align: center;
+}
+.details #finame #img {
+  width: 150px;
+  background-color: rgb(5, 5, 31);
+  color: white;
+  padding: 5px;
+  font-size: 2rem;
+}
+.title div {
+  width: 70vw;
+}
+.details div {
+  width: 70vw;
+  background-color: #f4f5f9;
+}
+.details #namediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+#na {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+}
+.info {
+  height: 66vh;
+  display: flex;
+  justify-content: center;
+}
+.info > div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70vw;
+  border: 1px solid rgba(201, 201, 201, 0.534);
+}
+.infotitle {
+  height: 15vh;
+  background-color: #f4f5f9;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.534);
+  display: flex;
+  align-items: center;
+}
+.infotitle #logodetails {
+  padding-right: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.infotitle #logodetails p {
+  font-size: 0.8rem;
+}
+.info .infoimg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+.infoimg div {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  width: 200px;
+  height: 150px;
+}
+#exlogo img {
+  height: 40px;
+  width: auto;
+  padding: 20px;
+}
+.section3 {
+  margin-left: 220px;
+  height: 700px;
+  width: 71%;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+}
+#paymentoption {
+  width: 64%;
+  border: 1px solid rgba(128, 128, 128, 0.39);
+  display: flex;
+}
+#paymentoption .option {
+  width: 33%;
+  background: #f4f5f9;
+}
+#paymentoption .option > div {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#bookingsummary {
+  margin-left: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.39);
+  width: 36%;
+  height: 370px;
+}
+#pricedetails {
+  height: 160px;
+  width: 85%;
+  margin-top: 40px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+#pricedetails > div {
+  width: 50%;
+}
+#pricedetails > div > div {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+#div2 > div {
+  justify-content: flex-end;
+}
+a {
+  color: maroon;
+  text-decoration: none;
+}
+#sbheader {
+  height: 80px;
+  width: auto;
+  border-bottom: 1px solid rgba(168, 167, 167, 0.322);
+  display: flex;
+  align-items: center;
+}
+#sbheader h2 {
+  margin-left: 20px;
+}
+#sbfooter {
+  width: 85%;
+  height: 95px;
+  margin-left: 20px;
+  display: flex;
+}
+#sbfooter .div1 {
+  width: 50%;
+  color: maroon;
+  display: flex;
+  align-items: center;
+}
+#sbfooter .div2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#total {
+  margin-left: 8px;
+  font-size: 2rem;
+}
+
+.paymentForm {
+  position: relative;
+}
+.hide-creditcard {
+  z-index: -2;
+  visibility: hidden;
+}
+.hide-upi {
+  z-index: -2;
+}
+.show-creditcard {
+  z-index: 2;
+  visibility: visible;
+  height: 91%;
+  width: 500px;
+}
+.show-upi {
+  z-index: 2;
+  visibility: visible;
+  height: 91%;
+  width: 500px;
+}
+.selectedOption {
+  background: rgba(201, 201, 201, 0.534);
+  color: white;
+}
+.paybutton {
+  padding: 10px 0;
+}
+.paybutton button {
+  margin-left: 300px;
+  padding: 10px 60px;
+  border: none;
+  background: maroon;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.paybutton button:hover {
+  background: white;
+  border: 1px solid maroon;
+  color: maroon;
+}
+footer2 {
+  background: red;
+}
+#upi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  margin-top: 40px;
+}
+#upi #f2 {
+  padding-bottom: 20px;
+}
+#upi p {
+  margin-bottom: 10px;
+}
+/* credit card */
+#main input {
+  border: none;
+  border-bottom: 2px solid silver;
+  margin-top: 40px;
+}
+#main h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* on off switch */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 41px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 18px;
+  left: 1px;
+  right: -9px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.paymentForm {
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+.footer {
+  height: 100px;
+  padding-left: 220px;
+  padding-bottom: 40px;
+}
+.footer .gobackbtn {
+  padding: 15px 60px;
+  border: none;
+  color: white;
+  background: rgb(1, 1, 48);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.cancelbtn {
+  margin-top: 50px;
+  margin-left: 800px;
+  padding: 15px 60px;
+  border: none;
+  color: white;
+  background: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.footer2 {
+  height: 60px;
+  background: #f4f5f9;
+  padding-left: 220px;
+  font-family: sans-serif;
+  padding-top: 30px;
+  font-weight: lighter;
+  color: rgba(128, 128, 128, 0.938);
+}

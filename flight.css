@@ -1,0 +1,769 @@
+/* for slider */
+body {
+    font-family: sans-serif;
+    transition: all 0.6s;
+  }
+  #s1,#s2,#s3{
+    width: 40px;
+    border: none;
+    background-color: white;
+  }
+  #slidetotal{
+    width: 100px;
+    border: none;
+    font-size: 26px;
+  }
+  #mainbox {
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.6s;
+  }
+  .sidemenu {
+    position: fixed;
+    background-color: white;
+    top: 20px;
+    right: 0px;
+    width: 0;
+    height: 95%;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(7, 7, 39);
+  }
+  .show-sidebar {
+    width: 38%;
+  }
+  /* .blur {
+    background-color: rgba(0, 0, 0, 0.61);
+  } */
+  #closebtn {
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+    border-right: 1px solid rgba(168, 167, 167, 0.322);
+  }
+  #sbtitle {
+    color: rgb(7, 7, 39);
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-left: 3rem;
+    font-weight: 500;
+  }
+  .closeIcon {
+    color: rgb(7, 7, 39);
+    margin: 0 20px;
+    margin-top: 24px;
+    font-size: 3rem;
+  }
+  .sidemenu {
+    display: flex;
+    flex-direction: column;
+  }
+  #sbheader {
+    height: 100px;
+    width: auto;
+    border-bottom: 1px solid rgba(168, 167, 167, 0.322);
+    display: flex;
+    align-items: center;
+  }
+  #sbheader h2 {
+    margin-left: 20px;
+  }
+  #sbmain {
+    height: 520px;
+    border-bottom: 1px solid rgba(168, 167, 167, 0.322);
+  }
+  #flightdetails {
+    border: 1px solid rgb(7, 7, 39);
+    height: 100px;
+    width: 85%;
+    margin-top: 50px;
+    margin-left: 42px;
+    display: flex;
+  }
+  #flightdetails .div1 {
+    width: 15%;
+    text-align: center;
+    background-color: rgb(7, 7, 39);
+    color: white;
+    padding-top: 18px;
+  }
+  #flightdetails .div2 {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #flightdetails .div2 > div {
+    height: 31%;
+  }
+  #flightid {
+    color: maroon;
+    padding-bottom: 0;
+    padding-left: 25px;
+  }
+  #flightdetails img {
+    width: 250px;
+  }
+  #srctime,
+  #desttime {
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+  #src {
+    float: left;
+    margin-left: 20px;
+  }
+  #dest {
+    float: right;
+    margin-right: 24px;
+  }
+  #pricedetails {
+    height: 160px;
+    width: 85%;
+    margin-top: 40px;
+    margin-left: 42px;
+    display: flex;
+    flex-direction: row;
+  }
+  #pricedetails > div {
+    width: 50%;
+  }
+  #pricedetails > div > div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  #div2 > div {
+    justify-content: flex-end;
+  }
+  a {
+    color: maroon;
+    text-decoration: none;
+  }
+  #sbfooter {
+    width: 85%;
+    height: 95px;
+    margin-left: 42px;
+    display: flex;
+  }
+  #sbfooter .div1 {
+    width: 50%;
+    color: maroon;
+  }
+  #sbfooter .div2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  #total {
+    margin-left: 8px;
+    font-size: 2rem;
+  }
+  /* slider end */
+
+.last{
+    margin-top: 300px;
+}
+.footer {
+  background-color: white;
+  grid-area: footer;
+  border: 1px solid rgba(206, 204, 204, 0.363);
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 4fr 1.5fr;
+  grid-template-areas: "footerblank gobackbutton continuebutton blackblank2";
+}
+button {
+  margin: 2rem;
+}
+.footer2 {
+  grid-area: footer2;
+  background-color: #f4f5f9;
+  padding: 50px;
+}
+.footerblank {
+  grid-area: footerblank;
+}
+.gobackbutton {
+  margin-left: 0;
+  grid-area: gobackbutton;
+  /* display: flex;
+  align-items: flex-start; */
+}
+.gobackbutton button {
+  margin-left: 0;
+  background-color: rgb(8, 8, 92);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+}
+.gobackbutton button:hover {
+  color: rgb(8, 8, 92);
+  background-color: white;
+  border: 1px solid rgb(8, 8, 92);
+}
+.continuebutton {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0;
+  grid-area: continuebutton;
+}
+.continuebutton button {
+  background-color: rgb(146, 14, 14);
+  color: white;
+  border: none;
+  padding: 0.2rem 4rem;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+
+  transition: all 0.4s ease-in-out;
+}
+.continuebutton button:hover {
+  color: rgb(146, 14, 14);
+  background-color: white;
+  border: 1px solid rgb(146, 14, 14);
+}
+.footerblank2 {
+  grid-area: footerblank2;
+}
+.footer2 div {
+  margin-left: 16%;
+}
+.footer2 div h5 {
+  color: grey;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.booking-box .rule-box{
+    /* margin-top: 200px; */
+    width: 65%;
+    background-color: #f4f5f9;
+    font-size: 14px;
+    color: #212529;
+    padding: 34px;
+    border: 1px silver solid;
+    float: left;
+}
+.booking-box .float .nr input{
+    font-size: 30px;
+    width: 90px;
+    border: none;
+}
+.booking-box .float .nr{
+    font-size: 20px;
+}
+.booking-box .float .btotal{
+    margin-right: 70px;
+    color: #c5012d;
+    font-size: 16px;
+}
+.booking-box .float .total{
+    font-family: "Open Sans",arial,sans-sarif;
+    color: #0d213b;
+    font-size: 16px;
+    padding: 16px 0px;
+    border-top:0.1px solid silver;
+    border-bottom:0.1px solid silver;
+
+}
+.booking-box .float .fares{
+    font-family: "Open Sans",arial,sans-sarif;
+    color: #0d213b;
+    font-size: 22.4px;
+    margin: 5px 0px; 
+}
+.booking-box .float .booking{
+    font-family: "Open Sans",arial,sans-sarif;
+    color: #0d213b;
+    font-size: 25.6px;
+    margin: 5px 0px 16px;
+}
+.booking-box .float {
+    float: right;
+}
+.total div{
+    display:inline-block;
+}
+.booking-box{
+    margin-top: 40px;
+    margin-left: 200px;
+    width: 71.5%;
+}
+.checkbox input{
+    margin: 6px 0px;
+    color: #0d213b;
+}
+.checkbox{
+    margin: 20px;
+    font-size: 15.6px;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+.third-line .c2 a, .c4 a{
+    text-decoration: none;
+    color: #c5012d;
+}
+.third-line .c1{
+    margin-left: 20px;
+    color: #0d213b;
+    font-size: 16px;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+.third-line div{
+    display:inline-block;
+    margin: 20px 0px;
+    margin-bottom: 40px;
+}
+.second-line i{
+    margin-bottom: 15px;
+}
+.second .second-line i{
+    font-size: 30px;
+    color: #0D213B;
+    border: 1px #0d213b solid;
+    border-radius: 50%;
+    padding: 20px;
+}
+.second .second-line div{
+    text-align: center;
+    padding: 44.76px;
+    /* margin-bottom:  30px; */
+    border-right: 0.1px gray solid;
+    display: inline-block;
+}
+.second .first-line .content .right{
+    color: #c5012d;
+    font-size: 16px;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+.second .first-line .content .left{
+    margin-right: 30px;
+    color: #0d213b;
+    font-size: 16px;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+.second .first-line .content div{
+    padding: 20px;
+    font-size: 16px;
+    display: inline-block;
+}
+.second{
+    font-family: "Open Sans",arial,sans-sarif;
+    background-color: #f4f5f9;
+}
+.first .insurance {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-right: 600px;
+}
+.first .icon img{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    width: 22px;
+    height: 22px;
+    margin-right: 0px'
+}
+.first .icici img{
+    width: 220px;
+    height: 70px;
+}
+.first div{
+    display:inline-block;
+    padding: 10px;
+}
+.insurance-box{
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 200px;
+    width: 71.5%;
+    /* height: 40px;   */
+    border: 1px silver solid;
+}
+.foot1 .right{
+    color: #616b79;
+    font-size: 12.8px;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+.foot1 .left{
+    margin-right: 481px;
+    color: #616b79;
+    font-size: 12.8px;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+.foot1 div{
+    margin-top: 18px;
+    display: inline-block;
+}
+.r1 .low input{
+    width: 80px;
+    border: none;
+    font-family: "Open Sans",arial,sans-sarif;
+    font-size: 25px;
+}
+.r1 .low{
+    font-family: "Open Sans",arial,sans-sarif;
+    font-size: 22px;
+}
+.r1 .up{
+    font-size: 15px;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+.third-container,.fourth-container, .fifth-container{
+    text-align: center;
+    justify-content: center;
+    padding: 20px 39px;
+    padding-top: 152px;
+}
+.second-container .r1{
+    padding-bottom: 7px;
+}
+.second-container .lowest-fare{
+    padding: 2px;
+    margin-bottom: 125px;
+    color: #fd7e14;
+    font-size: 13px;;
+    font-family: "Open Sans",arial,sans-sarif;
+    background-color: rgb(233, 224, 205);
+    border: 1px #fd7e14 solid;
+}
+.second-container {
+    text-align: center;
+    padding: 2px 30px;
+}
+.foot .left-item{
+    margin-right: 185px;
+}
+.foot .left-item, .right-item{
+    color: #616b79;
+    font-size: 11.52px;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+.foot div{
+    margin-top: 20px;
+    display: inline-block;
+}
+.code .del{
+    margin-right: 150px;
+}
+.code .ixd{
+    margin-right: 155px;
+}
+.code div{
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    font-family: "Open Sans",arial,sans-sarif;
+    color: #0d213b;
+}
+.time-image .start{
+    margin-right: 100px;
+}
+.time-image .imag{
+    margin-right: 100px;
+}
+.first-container{
+    padding: 20px;
+}
+.first-container, .second-container, .third-container, .fourth-container{
+    border-right: 1px silver solid;
+}
+.map img{
+    width: 400px;
+}
+.time-image .start, .end{
+    color: #0d213b;
+    font-size: 32px;
+    font-family: "Open Sans",arial,sans-sarif;
+
+}
+.time-image div{
+    margin-top: 10px;
+    display: inline-block;  
+}
+.logo .time{
+    margin-left: 12rem;
+}
+.airline-container .logo{
+    /* border: 1px solid silver; */
+    position: relative;
+    margin: 0px;
+}
+.airline-container div{
+    display: inline-block;
+}
+.airline-container{
+    margin-top: 18px;
+}
+.logo div{
+    display: inline-block;
+}
+.time{
+    color: #333;
+}
+.ai{
+    color: #c5012d;
+    font-size: 12.2px;
+    font-family: "Open Sans",arial,sans-sarif;
+    margin: 0px 10px 0px 0px;
+}
+.ai img{
+    height: 20px;
+    width: 20px;
+}
+.airline-container .second-container:hover,.third-container:hover,
+.fourth-container:hover, .fifth-container:hover{
+    border-top: 2px solid #C5012D;
+}
+.airline-container{
+    border: 1px solid silver;
+    background-color: #ffffff;
+}
+.airline{
+    position: relative;
+    margin: 0px;
+    /* border: 1px solid silver; */
+}
+.timing-show{
+    margin-left: 200px;
+    width: 71.5%;
+    height: 40px;  
+}
+.type-container{
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    background-color: #faf5f9;
+    height: 400px;
+}
+
+.flight-results .content{
+    background: #c5012d;
+}
+.flight-results div{
+    border-left: maroon 1px;
+    display: inline-block;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+
+.results input{
+    width: 164px;
+    background-color:#f4f5f9;
+    border: none;
+    margin-right: 24.76rem;
+    color: #0d213b;
+    font-size: 17.6px;
+    font-family: "Open Sans",arial,sans-sarif;
+}
+.web-special, .super-value, .flexi-saver, .flexible{
+    margin: 0px;
+    border-right: 1px maroon solid;
+    color: #ffffff;
+    font-size: 11.2px;
+    font-family: "Open Sans",arial,sans-sarif;
+    padding: 19px 22.6px;
+}
+.fare-choice .fare b{
+    color: #0D213B;
+    position: absolute;
+    margin-top: -30px;
+}
+.fare-choice div{
+    display: inline-block;
+}
+.inr{
+    text-align: center;
+    font-size: 10.08px;
+}
+.economy div{
+    display: block;
+}
+.business div{
+    display: block;
+}
+
+.fare {
+    font-size: 14.4px;
+    font-family: "Open Sans",arial,sans-sarif;
+    margin-right: 35rem;
+}
+.economy > p{
+    font-size: 40px;
+    color: white;
+}
+.economy{
+    color: #FFFFFF;
+    background: #C5012D;
+    font-family: "Open Sans",arial,sans-sarif;
+    padding: 22px 91px 20px; 
+}
+.business{
+    color: #FFFFFF;
+    background: #133B78;
+    font-family: "Open Sans",arial,sans-sarif;
+    padding: 15px 85px 20px;
+}
+
+.type-container{
+    padding-top: 6px;
+    overflow: hidden;
+    /* background-color: cadetblue; */
+}
+.type-container .content-container{
+    margin-left: 200px;
+    width: 71.5%;
+    height: 125px;
+    /* background-color: cornflowerblue; */
+}
+.slider-main .item .text p{
+    font-size: .8em;
+    color: #c5012d;
+    cursor: pointer;
+}
+.slider-wrap div{
+    display: inline-block;
+    position: relative;
+}
+#lefticon{
+    padding: 4px;
+}
+#righticon{
+    transform: rotate(180deg);
+    border-right: 1px silver solid;
+    padding: 4px 0px;
+    margin-left: 4px;
+}
+
+  .righticon{
+      width: 20px;
+      height: 20px;
+  }
+  .slider-wrap{
+      margin-right: 10px;
+      margin-top: 4rem;
+      width: 82%;
+      border: silver 1px solid;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+  }
+  .slider-main #selected{
+    border-top: 2px solid #c5012d;
+  }
+  .slider-main .item .text input{
+      border: none;
+      font-size: 14.4px;
+  }
+  .slider-main .item .text input{
+      width: 80px;
+  }
+  .slider-main #unavailable, #un{
+      background-color: #f4f5f9;
+  }
+  .slider-main .item:hover{
+      border-top: 0.1px solid black;
+  }
+  .slider-main .item{
+      font-family: sans-serif;
+      color: #0d213b;
+      text-align: center;
+      border-left: 1px silver solid;
+      padding: 14px 5px;
+     display: inline-block;
+      width: 95px;
+      }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.item .modify {
+    position:absolute;
+    margin-top: -40px;
+    font-size: 1rem;
+}
+.plane-icon p{
+    color: rgb(173, 34, 34);
+}
+.plane-icon h1{
+    font-family: sans-serif;
+}
+.plane-icon .item h1 #so,#de {
+    border: none;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+    width: 160px;
+}
+.plane-icon .item{
+    display: inline-block;
+}
+.starter{
+    margin-left: 200px;
+}
+.plane-icon .cale , .penc{
+    height: 15px;
+    width: 15px;
+}
+.plane-icon .aero{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 15px;
+    height: 20px;
+    width: 20px;
+}
+.lang-options{
+    float: right;
+    margin-right: 12rem;
+}
+.lang-options .lang-select{
+    padding: 8px;
+    font-size: 17px;
+    color: gray;
+}
+.active{
+    color: white;
+}
+#trip #tripValue{
+    width: 70px;
+    font-size: 20px;
+    background: rgb(173, 34, 34);
+    color: white;
+    border: none;
+}
+#trip b{
+    font-size: 20x;
+}
+ #trip{
+     padding-top: 11px;
+    font-size: 12px;
+    margin-left: 26rem;
+    border-right: 1px maroon solid;
+    border-left: 1px maroon solid;
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menu-bar .list{
+    margin-left: 10rem;
+}
+.menu-bar .list ul li{
+    display:inline-block;
+    font-size: 18px;
+    font-family: monospace;
+    margin: 0px 4px;
+    padding: 1.4rem;
+    border-left : 1px maroon solid;
+}
+.menu-bar{
+    width: 100%;
+    color: silver;
+    display: inline-block;
+    background-color: rgb(173, 34, 34);
+}
+.logo{
+    margin: 40px;
+    margin-left: 200px;
+}

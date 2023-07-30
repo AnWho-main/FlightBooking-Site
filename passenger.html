@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./passenger.css" />
+    <link rel="stylesheet" href="./preloader.css">
+    <title>passenger</title>
+  </head>
+  <body onload="store();">
+    <div class="pre-loader">
+      <div>
+        <img src="./images/p1.jpg" alt="" />
+      </div>
+      <div id="gif">
+        <img src="./images/808.gif" alt="" />
+        <h2>Please Wait we are processing your request</h2>
+      </div>
+    </div>
+    <script src="./preloader.js"></script>
+    <script src="./passenger.js"></script>
+    <div class="section1">
+      <div class="alogo">
+        <img src="./images/logoMain.png" alt="please check!" />
+      </div>
+
+      <!-- Menu bar -->
+      <div class="menu-bar">
+        <div class="list">
+          <ul type="none">
+            <li class="active">SEARCH</li>
+            <li class="active">FLIGHT</li>
+            <li class="active">PASSENGERS</li>
+            <li class>SEATS</li>
+            <li>PAYMENT</li>
+            <li id="trip">
+              TRIP SUMMARY <br />INR<b><input value="0" id="tripValue"/> <i class="fas fa-angle-down"></i> </b>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="seattitle">
+        <img src="./images/passenger.png" alt="" />
+        <span>PASSENGERS</span>
+      </div>
+    </div>
+
+    <div class="section2">
+      <div id="main">
+        <div id="s1">
+          <h3 id="h3">Adult one</h3>
+        </div>
+        <div id="f1" class="f1">
+          <h5>PLEASE NOTE</h5>
+          <p id="x1">
+            Ensure VTL(Vaccinated Travel Lane) eligibility before booking for
+            travel on flight AI 382 Delhi -Singapore and AI 383 Singapore -
+            Delhi. Please note that the name and title of all the passengers for
+            whom this booking is being made should match the identification
+            shown at the time of check-in. Kindly provide all contact numbers
+            (including your mobile number) as this will help us contact you in
+            case of any changes in flight timing. For Domestic flights with
+            flight duration up to 2 hours there will be no meal service. For
+            Domestic flights, only vegetarian meal is offered in Economy class.
+            Snacks/Hot meals will be served in Business class . For any Special
+            Meal request, please contact AI call centre/AI Reservation office.
+            Meal and seat request subject to being offered by operating carrier.
+            Click here to view the meals served on Air India flights. Travel
+            Relaxation To OCI Citizens Having Renewed Passports for travel till
+            31st Dec 2021. For more information Click here
+          </p>
+        </div>
+        <div id="f2" class="f2">
+          <h2>
+            <img src="images/pass.jpeg" alt="a" height="30px" width="30px" />&nbsp;
+            ADULT ONE
+          </h2>
+          <p>Note: Name as per Identity Card.</p>
+          <span id="s1" name="s1">
+            <span id="x2"> Title</span><br />
+            <select id="t1">
+              <option value="0">Title</option>
+              <option value="3">MR</option>
+              <option value="4">MRS</option>
+              <option value="5">MS</option>
+              <option value="2">Dr</option>
+            </select>
+          </span>
+          <span id="s3">
+            <p id="p2">FIRST/GIVEN NAME *</p>
+            <input
+              type="text"
+              placeholder="First/Given Name"
+              id="t2"
+              name="t2"
+            />
+            <p id="p3">SURNAME/LAST NAME *</p>
+            <input
+              type="text"
+              placeholder="Surname/Last Name"
+              id="t3"
+              name="t3"
+            />
+          </span>
+          <br />
+          FREQUENT FLYER PROGRAM
+          <select id="t4">
+            <option value="0">None</option>
+            <option value="1">India</option>
+            <option value="3">Canada</option>
+            <option value="4">China</option>
+            <option value="5">Dubai</option>
+            <option value="2">Dakin</option>
+          </select>
+          FREQUENT FLYER NUMBER
+          <input type="text" placeholder="FF Number" id="t5" name="t5" /><br />
+          MEAL SELECTION<select id="t6">
+            <option value="0">None</option>
+            <option value="1">Vegetarian</option>
+            <option value="3">Non Vegetarian</option>
+            <option value="4">Chinies</option>
+            <option value="5">Italic</option>
+            <option value="2">South Indian</option>
+            <option value="5">East Indian</option>
+            <option value="2">West Indian</option>
+          </select>
+          <input type="checkbox" id="t7" name="t7" />ADD GST INFORMATION
+          <a id="x9" href="https://www.cbic.gov.in/htdocs-cbec/gst/index"
+            >(I)</a
+          >
+          <div id="f3" name="f3">
+            <h2>SPECIAL ASSISTANCE REQUEST</h2>
+            <br />
+            Subject to availability - If wheelchair is required on medical
+            grounds, please contact the nearest AirIndia <br />
+            office for necessary clearances.
+            <select id="t8">
+              <option value="0">None</option>
+              <option value="1">Vegetarian</option>
+              <option value="3">Non Vegetarian</option>
+              <option value="4">Chinies</option>
+              <option value="5">Italic</option>
+              <option value="2">South Indian</option>
+              <option value="5">East Indian</option>
+              <option value="2">West Indian</option>
+            </select>
+          </div>
+          <h2>
+            <img src="images/contact.jpeg" alt="a" height="30px" width="30px" />
+            CONTACT DETAILS
+          </h2>
+          PHONE NUMBER<input type="text" placeholder="+91 India" readonly />
+          <input type="number" id="t9" name="t9" /><br />
+          MOBILE NUMBER<input type="number" id="t10" name="t10" /><br />
+
+          PRIMARY EMAIL *<input
+            type="email"
+            id="t11"
+            name="t11"
+          />&nbsp;&nbsp;SECONDARY EMAIL *<input
+            type="email"
+            id="t12"
+            name="t12"
+          /><br />
+          <div id="f4">
+            <input type="checkbox" name="t12" id="t12" /><a
+              href="https://www.airindia.in/Images/pdf/Air_India_Customer_Data_Privacy_Policy.pdf"
+              >I AGREE TO CUSTOMER DATA PRIVACY TERMS</a
+            >
+          </div>
+          <button id="f5" class="f5" onclick="next();">Continue</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section3">
+      <div class="div1">
+        <button class="gobackbtn" onclick="goback()">Go Back</button>
+      </div>
+      <div class="footer">
+        <h5>
+          Copyright © 2022 Air India Ltd. All rights reserved. Use of this
+          website indicates your compliance with our Privacy Policy, Conditions
+          of Carriage, FAQ's, Terms and Conditions
+        </h5>
+      </div>
+    </div>
+  </body>
+</html>

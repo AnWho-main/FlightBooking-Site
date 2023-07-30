@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./refund.css" />
+    <title>refund</title>
+  </head>
+  <body onload="store()">
+    <script>
+      function store(){
+        var r= localStorage.getItem('price');
+        r= 0.85*r;
+       val.value=r;
+      }
+      function hom(){
+        window.open("homepage.html");
+      }
+    </script>
+    <div class="container">
+      <div class="airindiaLogo"><img src="./airindia1.png" alt="" /></div>
+      <div class="ack"></div>
+      <div class="ticketdetails">
+        <div class="cancelicon">
+          <h2>Your Ticket is Cancelled.</h2>
+          <img src="./images/cancelled-stamp-4.png" alt="" />
+        </div>
+        <div class="refund">
+          <img src="./images/unnamed.png" alt="" />
+          <h3>Your refund amount is: INR</h3>
+          <input type="text" id="val" disabled />
+        </div>
+      </div>
+      <div><button class="btn" onclick="hom()">Go to HomePage</button></div>
+    </div>
+  </body>
+</html>

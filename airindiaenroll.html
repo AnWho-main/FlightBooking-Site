@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air india</title>
+    <link rel="stylesheet" href="./airindiaenroll.css">
+    </head>
+    <body>
+
+        <style>
+            .b{
+                border-radius: 5px;
+                font-size: 20px;
+                border: none;
+ font-family: sans-sarif;
+  margin-right: 80px;
+  float: right;
+  padding: 10px 20px;
+  background-color: white;
+  color: brown;
+  border: 1px solid brown;
+  transition: 0.2s all ease-in;
+}
+.b:hover {
+    background: brown;
+    color: white;
+}
+        </style>
+    <div id="b1" class="b1">
+    <img id="t1" src="./images/logo-new.png" height="69" width="208" alt="flying return" title="flying return">
+    <img src="./images/alliance.png" id="t2" height="69" width="253" alt="Star Allience" title="Star Allience">
+    </div>
+    <div id="header"></div>
+    <h2 id="t3">Flying Returns Account Registration</h2>
+    <div id="f1">  
+    <h3 id="t4">Required Account Information</h3>
+    <div id="f2">
+    Title:  *    
+    <select id="t6">
+     <option value="0">Please select...</option>
+     <option value="1">MASTER</option>
+     <option value="2">MISS</option>
+     <option value="3">MR</option>
+     <option value="4">MRS</option>
+     <option value="5">MS</option>
+    </select>
+    </div>
+
+    <div id="f3">
+    Gender:  *    
+    <select id="t7">
+     <option value="0">Please select...</option>
+     <option value="1">FEMALE</option>
+     <option value="2">MALE</option>
+     <option value="3">OTHERS</option>
+    </select>
+    <br>
+    </div>
+    <div id="f4">
+    First Name/ Given Name: * <input type="text" id="t8" name="t8">
+    <p id="p2">(As per passport)</p>
+    <div id="f5">
+    Last Name/Family Name: *<input type="text" id="t9" name="t9">
+    <p id="p1">(As per passport)</p>
+    </div>    
+    </div>
+    <div id="f6">
+    Name on Card : * <input type="text" id="t10" name="t10"> 
+    </div>
+    <div id="f7">
+        Date of Birth (DD/MMM/YYYY): * <input type="date" id="t11" name="t11"> 
+        </div> 
+        <div id="f8">
+        Mothers Maiden Name : * <input type="text" id="t12" name="t12"> 
+    </div>
+    <div id="f9">
+        Nationality: * <select id="t13">
+            <option value="0">Please select...</option>
+            <option value="1">AFGHANISTAN</option>
+            <option value="2">ANDORRA</option>
+            <option value="3">ANGOLA </option>
+            <option value="4">ANGUILLA </option>
+            <option value="5">BELIZE </option>
+            <option value="6">BHUTAN </option>
+            <option value="7">BOTSWANA </option>
+            <option value="8">BULGARIA </option>
+            <option value="9">BURKINA FASO </option>
+            <option value="10">CHILE </option>
+            <option value="11">COLOMBIA  </option>
+            <option value="12">COMORIAN </option>
+            <option value="13">COSTA RICA </option>
+            <option value="14">CROATIA </option>
+            <option value="15">CUBA </option>
+            <option value="16">DOMINICA  </option>
+            <option value="17">DOMINICAN REPUBLIC  </option>
+            <option value="18">HONG KONG SAR OF CHINA</option>
+            <option value="19">HONDURAS  </option>
+            <option value="20"> SLOVENIA </option>
+            <option value="21"> SOLOMON ISLANDS</option>
+            <option value="22">SUDAN </option>
+            <option value="23">URUGUAY </option>
+            <option value="24"> ZAMBIA </option>
+           </select>
+    </div> 
+
+    <div id="f10">
+        Country/Region of Residence:* <select id="t14">
+            <option value="0">Please select...</option>
+            <option value="1">AFGHANISTAN</option>
+            <option value="2">ANDORRA</option>
+            <option value="3">ANGOLA </option>
+            <option value="4">ANGUILLA </option>
+            <option value="5">BELIZE </option>
+            <option value="6">BHUTAN </option>
+            <option value="7">BOTSWANA </option>
+            <option value="8">BULGARIA </option>
+            <option value="9">BURKINA FASO </option>
+            <option value="10">CHILE </option>
+            <option value="11">COLOMBIA  </option>
+            <option value="12">COMORIAN </option>
+            <option value="13">COSTA RICA </option>
+            <option value="14">CROATIA </option>
+            <option value="15">CUBA </option>
+            <option value="16">DOMINICA  </option>
+            <option value="17">DOMINICAN REPUBLIC  </option>
+            <option value="18">HONG KONG SAR OF CHINA</option>
+            <option value="19">HONDURAS  </option>
+            <option value="20"> SLOVENIA </option>
+            <option value="21"> SOLOMON ISLANDS</option>
+            <option value="22">SUDAN </option>
+            <option value="23">URUGUAY </option>
+            <option value="24"> ZAMBIA </option>
+           </select>
+    </div> 
+    <p id="p1">Travel Document</p>
+    <div id="f11">
+        Passport Number: * <input type="text" id="t15" name="t15"> 
+    </div>
+    <div id="f12">
+        Passport Expiry Date <br>
+        (DD/MMM/YYYY):*<input type="date" id="t16" name="t16"> 
+    </div>
+<p id="p1">I understand and agree that if I do not upload copy of my above mentioned travel document (Passport/Government issued<br> photo ID) to validate my account within 45 days then I shall only be able to accrue FR Points but not able to redeem FR Points.</p>
+<div id="f13">
+    Upload copy of travel Document: *<input type="file" id="file" name="file" placeholder="Select photo id proof">
+    <input type="text" id="t17" class="t17" readonly><button>Remove</button>
+    <br>
+    </div>
+    <div id="f14">
+<p id="p1">Communication Address:</p>
+<br>Apartment/ Door No./ Block No.: * <input type="text" class="t18" id="t18">
+    </div>
+<div id="f15">
+    Name of Premises / Building / Village:<input type="text" id="t19" name="t19">
+</div>
+<div id="f16">
+    Road / Street / Post Office: *<input type="text" id="t20" name="t20">
+</div>
+<div id="f18">
+    Area / Locality: *<input type="text" id="t21" name="t21">
+</div>
+<div id="f19">
+   Country: * <input type="text" id="40" name="t40"> 
+</div>
+<div id="f20">
+    State / Province: *<input type="text" id="t22" name="t22">
+</div>
+<div id="f21">
+Town / City / District: *<input type="text" id="t23" name="t23">
+</div>
+<div id="f22">
+    Postal Code: *<input type="text" id="t23" name="t23">
+    </div>
+        <div id="f23">
+        Land Mark (If Any): *<input type="text" id="24" name="24">
+        </div>
+        <p id="p1">If your age is 12 years and above, then please provide your own unique mobile number and email address/ID to which separate One-Time<br> Pin(OTPs) messages will be communicated.<br>
+        <br>
+        Please ensure that the phone number / email id you provide is not linked to any existing member (If you are a child you may provide your<br> parents number).<br>
+        <br>
+        You are required to validate these OTP to complete your enrollment.</p>
+        Mobile Number: * <select id="t25">
+            <option value="0">Please select...</option>
+            <option value="1">AFGHANISTAN (+93)</option>
+            <option value="2">BRAZIL (+55)</option>
+            <option value="3">HUTAN (+975)</option>
+            <option value="4">TURKEY (+90)</option>
+            <option value="5">BULGARIA (+359)</option>
+           </select>&nbsp;&nbsp;<input type="number" id="t26" name="t26">
+         <div id="f24">
+            Email Address: * <input type="email" id="t27" name="27">
+         </div>
+         <div id="f25">
+         Re-enter Email: *<input type="email" id="t28" name="28">
+         </div>
+        <p id="p1">I agree to:-</p>
+        <div id="f26">
+        Receive Flying Returns Program<br>
+        Updates via Email*<select id="t29">
+            <option value="0">Please select...</option>
+            <option value="1">No</option>
+            <option value="2">Yes</option>
+           </select></div>
+
+           <div id="f27">
+            Receive Instant (Non Transaction)<br>
+            Notifications via SMS*<select id="t30">
+                <option value="0">Please select...</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+               </select></div>
+
+               <div id="f28">
+                Receive Promotions from Flying<br> 
+                Returns via Email*<select id="t31">
+                    <option value="0">Please select...</option>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                   </select></div>
+
+                   <div id="f29">
+                    Receive Promotions from <br>
+                    Partners via Email*<select id="t32">
+                        <option value="0">Please select...</option>
+                        <option value="1">No</option>
+                        <option value="2">Yes</option>
+                       </select></div>
+
+                       <div id="f30">
+                        Receive notification of account<br>
+                        changes via SMS/Email *<select id="t33">
+                            <option value="0">Please select...</option>
+                            <option value="1">No</option>
+                            <option value="2">Yes</option>
+                           </select></div>
+
+                           <div id="f31">
+                            Receive notification of any<br> 
+                            Accrual and Redemptions<br>
+                            Transactions via SMS*<select id="t34">
+                                <option value="0">Please select...</option>
+                                <option value="1">No</option>
+                                <option value="2">Yes</option>
+                               </select></div>
+
+                               <div id="f32">
+                            password: *   <input type="password" id="t35" name="t35">
+                               </div>
+                               <div id="f33">
+                                Re-enter Password: * <input type="password" id="t36" name="t36">
+                                   </div>
+                                   <div id="f34">
+                                    Security Question: *  <select id="t37"><br>
+                                        <option value="0">Please select...</option>
+                                        <option value="1">In what city did you meet your spouse/significant other?  </option>
+                                        <option value="2">In what city does your nearest sibling live?  </option>
+                                        <option value="3">In what city or town did your mother and father meet? </option>
+                                        <option value="4">In what city or town was your first job?  </option>
+                                        <option value="5"> What is the middle name of your youngest child? </option>
+                                        <option value="6"> What is the name of a college you applied to but didn't attend? </option>
+                                        <option value="7">What is the name of the place your wedding reception was held?  </option>
+                                        <option value="8"> What is the name of your favorite childhood friend? </option>
+                                        <option value="9"> What is the name of your pet? </option>
+                                        <option value="10"> What is your oldest siblings birthday month and year? (e.g., January 1900) </option>
+                                        <option value="11"> What was the last name of your favorite teacher? </option>
+                                        <option value="12"> What is your oldest cousins first and last name? </option>
+                                        <option value="13"> What was the name of your first stuffed animal? </option>
+                                       </div>
+<br><div id="35"> <input type="checkbox" id="t38" name="38">I have read and agreed to the terms and conditions of the Flying Return<br>
+<input type="checkbox" id="t39" name="39">&nbsp;I agree to receive a confirmatory copy of these terms & conditions on my registered email
+</div>
+</div>
+<!-- submit button -->
+<div class="btn">
+    <button class="b">SUBMIT</button>
+</div>
+</body>
+</html>
+
+

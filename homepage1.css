@@ -1,0 +1,137 @@
+
+/* Image Shower */
+table {
+    position:relative;
+    margin-left: 160px;
+  }
+  table td {
+    padding: 0px 4px;
+  }
+  table td h1{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:4px;
+    text-align: center;
+    background-color: #c53030;
+    color: white;
+    padding-bottom: 60px;
+    font-size: 50px;
+  }
+  #limage{
+    height: 250px;
+    width: 380px;
+  }
+  
+  /* FIrst Slider */
+  .m-1{
+    transition: 4s;
+  }
+  .prev-1, .next-1{
+    cursor: pointer;
+    position: fixed;
+    top: 130%;
+    width: auto;
+    margin-top: -20px;
+    padding: 0px 8px;
+    color: gray;
+    font-weight: bold;
+    font-size: 21px;
+    transition: 0.6s ease;
+    border: 3px solid gray;
+    border-radius: 50%;
+  }
+  
+  /* Position the "next button" to the right */
+  .next-1 {
+    right: 80px; 
+    position: absolute;
+  }
+  .prev-1{
+    left: 80px;
+    position: absolute;
+  }
+  
+  .slider-box-1 {
+    width     : 80%;
+    max-height: 80vh;
+    position  : relative;
+    overflow  : hidden; 
+    margin    : 0px auto;
+    margin-bottom: 0px;
+  }
+  #slider-1 #m-1{
+    margin: 0px 20px;
+  } 
+  #slider-1 {
+    width  : 100%;
+    display: inline-flex;
+    flex: 5;
+   padding: 20px;
+   margin-bottom: 0px;
+   margin-bottom: 0px;
+   transition: 4s;
+  }
+  
+  #slider-1 img {
+    width: 100%;
+  }
+  
+  
+  /* Second Slider */
+  * {
+    margin : 0;
+    padding: 0;
+  }
+  .m{
+    transition: 1s;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: fixed;
+    top: 174%;
+    width: auto;
+    margin-top: -28px;
+    padding: 0px 8px;
+    color: gray;
+    font-weight: bold;
+    font-size: 21px;
+    transition: 0.6s ease;
+    border: 3px solid gray;
+    border-radius: 50%;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 80px; 
+    position: absolute;
+  }
+  .prev{
+    left: 80px;
+    position: absolute;
+  }
+  
+  .slider-box {
+    width     : 80%;
+    max-height: 80vh;
+    position  : relative;
+    overflow  : hidden; 
+    margin    : 0px auto;
+  
+  }
+  #slider #m{
+    margin: 0px 20px;
+  } 
+  #slider {
+    width  : 100%;
+    display: inline-flex;
+    flex: 5;
+   padding: 20px;
+   margin: 0px;
+   transition: 4s;
+   margin-top: -12px;
+  }
+  
+  #slider img {
+    width: 100%;
+  }
+  
+  

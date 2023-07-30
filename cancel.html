@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cancel.css" />
+    <link rel="stylesheet" href="./preloader.css">
+    <title>cancel</title>
+  </head>
+  <body>
+    <script>
+      function go(){
+        window.open("homepage.html");
+      }
+    </script>
+    <div class="pre-loader">
+      <div>
+        <img src="./images/p1.jpg" alt="" />
+      </div>
+      <div id="gif">
+        <img src="./images/808.gif" alt="" />
+        <h2>Please Wait we are processing your request</h2>
+      </div>
+    </div>
+    <script src="./preloader.js"></script>
+    <div class="container">
+      <div class="airindiaLogo"><img src="./images/airindia1.png" alt="" /></div>
+      <div class="ack"></div>
+      <div class="ticketdetails">
+        <h2>Your Ticket Booking is Cancelled.</h2>
+        <img src="./images/sady.png" alt="" />
+      </div>
+      <div><button class="btn" onclick="go()">Go to HomePage</button></div>
+    </div>
+  </body>
+</html>

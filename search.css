@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+}
+.section1 .active {
+  color: white;
+}
+#trip b {
+  font-size: 20x;
+}
+#trip {
+  padding-top: 11px;
+  font-size: 12px;
+  margin-left: 26rem;
+  border-right: 1px maroon solid;
+  border-left: 1px maroon solid;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  margin: 0;
+}
+/* body {
+  background-color: #f4f5f9;
+} */
+.section1 .menu-bar .list {
+  margin-left: 10rem;
+}
+.section1 .menu-bar .list ul li {
+  display: inline-block;
+  font-size: 18px;
+  font-family: monospace;
+  margin: 0px 4px;
+  padding: 1.4rem;
+  border-left: 1px maroon solid;
+}
+.section1 .menu-bar {
+  width: 100%;
+  color: silver;
+  display: inline-block;
+  background-color: rgb(173, 34, 34);
+}
+.section1 .logo {
+  margin: 40px;
+  margin-left: 200px;
+}
+.pcontainer {
+  height: 90vh;
+}
+.title {
+  background-color: white;
+  height: 20vh;
+  width: 70vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 200px;
+}
+.title #icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: 2px solid rgb(5, 5, 31);
+  color: rgb(5, 5, 31);
+  padding-top: 0.7rem;
+  text-align: center;
+  margin-right: 10px;
+}
+.title span {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+}
+.searchbox {
+  width: 70vw;
+  height: 65vh;
+  margin-left: 200px;
+  display: flex;
+  color: rgb(128, 128, 128);
+}
+#searchform {
+  width: 50%;
+  font-family: sans-serif;
+}
+
+#radio {
+  width: 80%;
+  margin-left: 40px;
+  margin-bottom: 1.4rem;
+  margin-top: 1.4rem;
+}
+#radio label {
+  margin-right: 40px;
+}
+#src,#dest  {
+  font-size: 20px;
+  margin-left: 40px;
+  width: 435px;
+  height: 40px;
+  color:rgb(128, 128, 128);
+}
+.input1 label {
+  margin-left: 40px;
+}
+.input1 input {
+  display: block;
+  width: 80%;
+  margin-bottom: 1.4rem;
+  padding: 10px 0;
+  margin-left: 40px;
+}
+.input2 {
+  width: 80%;
+  display: flex;
+  margin-left: 40px;
+}
+.input2 div {
+  width: 50%;
+}
+.input2 input {
+  margin-bottom: 1.4rem;
+  padding: 10px 25px;
+}
+.input2 select {
+  margin-bottom: 1.4rem;
+  padding: 10px 80px;
+}
+button {
+  margin-top: 40px;
+  margin-left: 275px;
+  padding: 15px 40px;
+  background: maroon;
+  color: white;
+  border: none;
+}
+#return {
+  padding: 10px 37px;
+}
+#alert img {
+  margin-top: 340px;
+  margin-left: 70px;
+  height: 150px;
+}
+.footer2 {
+  background-color: #f4f5f9;
+  height: 50px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(128, 128, 128, 0.452);
+}
+.footer2 div {
+  margin-left: 16%;
+}
+.footer2 div h5 {
+  color: grey;
+  font-family: sans-serif;
+  font-weight: lighter;
+}

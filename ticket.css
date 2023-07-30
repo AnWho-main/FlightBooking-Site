@@ -1,0 +1,148 @@
+input{
+  background-color:floralwhite;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.ack {
+  display: flex;
+  text-align: center;
+}
+.ack img {
+  height: 50px;
+}
+.ticketdetails {
+  margin-top: 20px;
+  height: 400px;
+  width: 800px;
+  border: 1px solid grey;
+}
+.btn {
+  margin-top: 40px;
+  padding: 15px 60px;
+  color: white;
+  background-color: rgb(189, 19, 19);
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+.btn:hover {
+  color: rgb(189, 19, 19);
+  background: white;
+  border: 1px solid rgb(189, 19, 19);
+}
+.ticketdetails {
+  display: flex;
+}
+.generaldetails {
+  width: 60%;
+}
+.ailogo {
+  height: 110px;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.pricedetails {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.div1 {
+  height: 120px;
+  display: flex;
+}
+.div2 {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.div2 label {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+.div2 input {
+  border: none;
+}
+.div2 #time {
+  margin-left: 120px;
+}
+.div2 #seatno {
+  margin-left: 48px;
+}
+.div2 #na {
+  margin-left: 113px;
+}
+.imgdiv {
+  width: 150px;
+}
+.div1 img {
+  margin-top: 8px;
+  height: 100px;
+  margin-left: 20px;
+}
+.infodiv {
+  padding-left: 20px;
+}
+.priceall {
+  height: 200px;
+}
+.pricetotal {
+  padding-top: 10px;
+}
+.pricetotal label {
+  margin-left: 60px;
+}
+.pricetotal span {
+  font-size: 1.4rem;
+  color: rgb(7, 7, 87);
+}
+.pricetotal input {
+  font-size: 2rem;
+  width: 120px;
+  border: none;
+}
+.priceall {
+  padding-top: 60px;
+  font-size: 1.4rem;
+}
+.priceall input {
+  width: 50px;
+  padding-bottom: 5px;
+  border: none;
+}
+#to {
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+#source {
+  margin-top: 20px;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: none;
+}
+#destination {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: none;
+}
+.cancelation{
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+.cancelation:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}

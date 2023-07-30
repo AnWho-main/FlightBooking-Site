@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin-left: 50px;
+            font-size: 20px;
+            font-family: droid_sansregular,sans-serif,Tahoma;            
+        }
+        #header{
+            margin-left: -100px;
+            margin-right: -8px;
+            background: none repeat scroll 0 0 #c32026;
+            box-shadow: 0 2px 2px #777;
+            height: 32px;
+        }
+        #f1{
+            border: 1px solid #747474;
+            opacity: .7;
+            padding: 4px 10px;
+            margin-left: 20px;
+            margin-right: 950px;
+            width: 600px;
+            height: 350px;
+        }
+        #e1{
+            margin-left: -201px;
+            margin-top: +15px;
+        }
+         #a1,#a2{
+             color: black;
+             opacity: .9;
+             text-align: right;
+         }
+        button{
+            color: white;
+            background-color: #c32026;
+            border-radius: 10%;
+            margin-bottom: 10px;
+            margin-left: 450px;
+        }
+        #t3{
+            font-size: 31px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+            font-family: droid_sansregular,sans-serif,Tahoma;
+        }
+        #t1{
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border-radius: 3%;
+        }
+        #t2{
+            margin-left: 55px;
+            border-radius: 3%;
+        }
+        #f2{
+            margin-left: 15px;
+        }
+        #a1{
+            margin-top: 600px;
+            margin-left: 370px;
+            margin-bottom: +20px;
+        }
+        #a2{
+            margin-top: 650px;
+            margin-left: 400px;
+        }
+        #d1{
+            margin-top: +30px;
+        }
+         input{
+             width: 400px;
+         }
+    </style>
+    <script>
+        function search(){
+            window.open("search.html");
+        }
+    </script>
+</head>
+<body>
+    <img id="t1" src="./images/logo-new.png" height="69" width="208" alt="flying return" title="flying return">
+    <img src="./images/alliance.png" id="t2" height="69" width="253" alt="Star Allience" title="Star Allience">
+    <div id="header"></div>
+    <h2 id="t3">Login</h2>
+    <div id="f1" class="f1">
+        <div id="f2">
+        Username: * <input type="text" id="t1" name="t1"><br>
+        Password: * <input type="password" id="t2" name="t2"><br>
+        <table id="e1" class="e1" role="presentation"><tbody><tr class="ui-widget-content" role="row"><td role="gridcell" class="ui-panelgrid-cell"><div id="login_form:captcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcIHgITAAAAAPD-_UT1XH8-S-eOQ-Rruhv0D0my&amp;co=aHR0cHM6Ly9mZmFpLmxveWFsdHlwbHVzLmFlcm86NDQz&amp;hl=en&amp;v=VZKEDW9wslPbEc9RmzMqaOAP&amp;size=normal&amp;cb=yhs1tjernu9j" width="304" height="78" role="presentation" name="a-wbbtosgb7l8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></td></tr><tr class="ui-widget-content" role="row"><td role="gridcell" class="ui-panelgrid-cell"><div id="login_form:j_idt45" aria-live="polite" class="ui-message"></div></td></tr></tbody></table>
+        <div role="presentation"></div>
+        <div class="recaptcha-checkbox-checkmark" role="presentation" style></div>
+        <div class="recaptcha-checkbox-checkmark" role="presentation" style></div>
+    </div>
+    <div id="d1">
+        <button onclick="search()">Login</button><br>
+        <a  id="a1" class="a1" href="airindia.html">New User-Register</a><br>
+        <a  id="a2" class="a2" href="reset.html">Reset Password</a></div>
+    </div>
+</body>
+</html>

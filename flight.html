@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>flight</title>
+    <script src="https://kit.fontawesome.com/9cb9f6bbcf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./flight.css" />
+    <link rel="stylesheet" href="./preloader.css">
+</head>
+
+<body onload="store();">
+    <div class="pre-loader">
+        <div>
+          <img src="./images/p1.jpg" alt="" />
+        </div>
+        <div id="gif">
+          <img src="./images/808.gif" alt="" />
+          <h2>Please Wait we are processing your request</h2>
+        </div>
+      </div>
+      <script src="./preloader.js"></script>
+    <!-- Image -->
+    <div class="search">
+        <div class="logo">
+            <img src="images\logoMain.png" alt="please check!" />
+        </div>
+
+        <!-- Menu bar -->
+        <div class="menu-bar">
+            <div class="list">
+                <ul type="none">
+                    <li class="active">SEARCH</li>
+                    <li class="active">FLIGHT</li>
+                    <li>PASSENGERS</li>
+                    <li>SEATS</li>
+                    <li>PAYMENT</li>
+                    <li id="trip">TRIP SUMMARY <br />INR<b><input value=" 0" id="tripValue"/> <i class="fas fa-angle-down"></i> </b></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Options -->
+        <div class="lang-options">
+            <select class="lang-select">
+                <option selected>English</option>
+                <option value="1">Hindi</option>
+                <option value="2">francais</option>
+                <option value="3">deyutsch</option>
+            </select>
+        </div>
+    </div><br /><br /><br />
+
+    <!-- Starter {Going-Destination} -->
+    <div class="starter">
+        <div class="going">
+            <span class="plane-icon">
+                <div class="item">
+                    <img class="aero" src="images\aero.png" alt="please check!" />
+                </div>
+                <div class="item">
+                    <h1><input type="text" value="Source" id="so" name="so" />
+                        to
+                        <input type="text" value="Destination" id="de" name="so" />
+                    </h1>
+                    <p> <img class="cale" src="images\cale.png" alt="please check!" /> Mon, 10 Jan 2022</p>
+                </div>
+                <div class="item">
+                    <p class="modify" onclick="pre()"> <img class="penc" src="images\penc.jpg" alt="please check!" /> Modify Search </p>
+                </div>
+            </span>
+        </div>
+
+        <!-- Dates SLider -->
+        <div class="dates">
+            <div class="slider-wrap">
+
+                <div class="slider-main" id="slider-main">
+                    <img onclick="next()" class="righticon" id="lefticon" src="images\righticon.png"
+                        alt="please check!" />
+                    <div class="item"  id="selected">
+                        <div class="text">
+                            <input value="Sun 16 Jan" id="t1" />
+                            <P>INR 12,144</P>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <input value="SUN 17 JAN" id="t2"/>
+                            <P>INR 12,144</P>
+                        </div>
+                    </div>
+                    <div class="item" id="unavailable"> 
+                        <div class="text">
+                            <input value="SUN 18 JAN" id="t3"/>
+                            <P>Unavailable</P>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <input value="SUN 19 JAN" id="t4"/>
+                            <P>INR 12,144</P>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text" >
+                            <input value="SUN 20 JAN" id="t5"/>
+                            <P>INR 12,144</P>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <input value="SUN 21 JAN" id="t6"/>
+                            <P> INR 12,144</P>
+                        </div>
+                    </div>
+                    <div class="item" id="un">
+                        <div class="text">
+                            <input value="SUN 22 JAN" id="t7"/>
+                            <P>Unavailable</P>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="text">
+                            <input value="SUN 23 JAN" id="t8"/>
+                            <P>INR 12,144</P>
+                        </div>
+                    </div>
+                    <div class="item" id="un">
+                        <div class="text" id="last-child">
+                            <input value="SUN 24 JAN" id="t9"/>
+                            <P>Unavailable</P>
+                        </div>
+                    </div>
+
+
+                                        
+                </div>
+                <div class="i">
+                    <img onclick="next()" class="righticon" id="righticon" src="images\righticon.png"
+                        alt="please check!" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flight type -->
+    <div class="type-container">
+        <div class="content-container">
+            <!-- First line -->
+            <div class="fare-choice">
+
+                <div class="fare">
+                    <b>FARE CHOICE \/</b>
+                </div>
+                <div class="economy" onclick="economy()">
+                    <div>ECONOMY</div>
+                    <div class="inr">INR 20,224</div>
+                </div>
+                <div class="business" onclick="business()">
+                    <div  id="busi" >BUSINESS</div>
+                    <div class="inr">INR 20,224</div>
+                </div>
+            </div>
+            <!-- Second Line -->
+            <div class="flight-results">
+                <div class="results"><b><input value="1 FLIGHT RESULTS" id="fres"/></b></div>
+                <div class="content" id="content">
+                    <div class="web-special" id="we"><b>\/ WEB SPECIAL</b></div>
+                    <div class="super-value" id="su"><b>\/ SUPER VALUE</b></div>
+                    <div class="flexi-saver"  id="fl"><b>\/ FLEXI SAVER</b></div>
+                    <div class="flexible" id="fli"><b>\/ FLEXIBLE</b></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timing-show">
+
+            <!-- Content Box -->
+            <div class="airline-container" id="air-content">
+                <!-- First Container -->
+                <div class="first-container">
+                    <div class="logo">
+                        <div class="airline">
+                            <div class="ai">
+                                <img src="images\wing.jpg" alt="please check!" />
+                                <b> AI 9698 </b>
+                            </div>
+                        </div>
+                        <div class="airline">
+                            <div class="ai">
+                                <img src="images\wing.jpg" alt="please check!" />
+                                <b> AI 504 </b>
+                            </div>
+                        </div>
+                        <div class="time">
+                            7h 45m
+                        </div>
+                    </div><br />
+
+                    <!-- Timing -->
+                    <div class="time-image">
+                        <div class="start">
+                            <b> 16:10 </b>
+                        </div>
+                        <div class="imag">
+                            <img src="images\aero.png" height="30px" width="30px" alt="please check!" />
+                        </div>
+                        <div class="end">
+                            <b> 23:55 </b>
+                        </div>
+                    </div>
+                    <br />
+                    <!-- line image -->
+                    <div class="map">
+                        <img src="images\airline.png" alt="please check!" />
+                    </div><br />
+
+                    <!-- destination code -->
+                    <div class="code">
+                        <div class="ixd">
+                            ST
+                        </div>
+                        <div class="del">
+                            DEL<br />
+                            3H 25M
+                        </div>
+                        <div class="blr">
+                            EN
+                        </div>
+                    </div><br />
+
+                    <!--1st ka footer -->
+                    <div class="foot">
+                        <div class="left-item">
+                            AI 9698 Operated By Alliance Air
+                        </div>
+                        <div class="right-item">
+                            Details >
+                        </div>
+                    </div>
+                </div>
+                <!-- Second container -->
+                <div class="second-container" id="second-container" onclick="changeBg2()">
+                    <div class="lowest-fare">
+                        LOWEST FARE
+                    </div><br />
+                    <div class="r1">
+                        <p class="up">INR</p>
+                        <p class="low"><input value="12,144" id="r1"/></p>
+                    </div>
+                </div>
+
+                <!-- Third container -->
+                <div class="third-container" id="third-container" onclick="changeBg3()">
+                    <div class="r1">
+                        <p class="up">INR</p>
+                        <p class="low"><input value="12,984" id="r2"/></p>
+                    </div>
+                </div>
+
+                <!-- Fourth container -->
+                <div class="fourth-container" id="fourth-container" onclick="changeBg4()">
+                    <div class="r1">
+                        <p class="up">INR</p>
+                        <p class="low"><input value="18,917" id="r3"/></p>
+                    </div>
+                </div>
+                <!-- Fifth container -->
+                <div class="fifth-container" id="fifth-container" onclick="changeBg5()">
+
+                    <div class="r1">
+                        <p class="up">INR</p>
+                        <p class="low">30,309</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="foot1">
+                <div class="left">
+                    AI 9698 Operated BY Alliance Air
+                </div>
+                <div class="right">
+                    Price include taxes and fees. Service
+                    and amenities may vary or change.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insurance box -->
+    <div class="insurance-box">
+        <!-- First line content -->
+        <div class="first">
+            <div class="icon">
+                <img src="images/umbe.jpg" alt="please check!" />
+            </div>
+            <div class="insurance">
+                <h2>INSURANCE</h2>
+            </div>
+            <div class="icici">
+                <img src="images/icici-logo.png" alt="please check!" />
+            </div>
+        </div>
+        <!-- Second line content -->
+        <div class="second">
+            <div class="first-line">
+                <div class="content">
+                    <div class="left">
+                        Secure your Travel from ICICI Lombard General
+                        Insurance Company Ltd against unforeseen emergencies and much more.
+                    </div>
+                    <div class="right">
+                        More Benifits
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-line">
+                <div class="i1">
+                    <i class="fas fa-medkit"></i><br />
+                    <b>Emergency Medical Expanses</b>
+                </div>
+                <div class="i2">
+                    <i class="far fa-clock"></i><br />
+                    <b>Trip Delay</b>
+                </div>
+                <div class="i3">
+                    <i class="fas fa-luggage-cart"></i><br />
+                    <b>Loss/Delay of Checked-in Baggage</b>
+                </div>
+                <div class="i4">
+                    <i class="fas fa-money-bill-wave"></i><br />
+                    <b>Personal Accident</b>
+                </div>
+            </div>
+
+            <div class="third-line">
+                <div class="c1">
+                    Travel Insurance is valid for Indian citizens only ,
+                </div>
+                <div class="c2">
+                    <a href="#">Terms and conditions apply</a>
+                </div>
+                <div class="c3">
+                    . Please read the full
+                </div>
+                <div class="c4">
+                    <a href="#">Policy Wording </a>
+                </div>
+                <div class="c5">
+                    before booking.
+                </div>
+            </div>
+        </div>
+
+        <!-- Third line content (checkbox) -->
+        <div class="checkbox">
+            <input type="radio" name="chec" value="check1" id="che" onclick="checker()"/>
+            YES, ADD INSURANCE FOR <b>INR 249</b> PER PASSENGER (18% GST INCL.)<br />
+            <input type="radio" name="chec" value="check2" id="che1" />
+            NO THANKS, I DON’T NEED INSURANCE<br />
+        </div>
+
+    </div>
+
+    <div class="booking-box">
+     <!-- Rules and Booking -->
+     <div class="rule-box">
+        <div class="rules">
+           <pre>Please read fare rules carefully then proceed. </pre>
+        </div>
+        </div>
+    <!-- Booking Summary -->
+        <div class="float">
+    <div class="booking">
+        <b>BOOKING SUMMARY</b>
+    </div>
+    <div class="fares">
+        <b>FARES & FEES</b>
+    </div>
+    <div class="total">
+        <div class="btotal">
+            BOOKING<br />
+            TOTAL
+        </div>
+        <div class="nr">
+            INR <B><input value="0" id="book"/></B>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+
+    </section>
+        <div class="last">
+            <div class="footer">
+          <div class="footerblank"></div>
+          <div class="gobackbutton">
+            <button type="submit" onclick="pre()">GO BACK</button>
+          </div>
+          <div class="continuebutton">
+            <button type="submit" onclick="pnext()" >CONTINUE</button>
+          </div>
+          <div class="footerblank2"></div>
+        </div>
+        <div class="footer2">
+          <div>
+            <h5>
+              Copyright © 2022 Air India Ltd. All rights reserved. Use of this
+              website indicates your compliance with our Privacy Policy,
+              Conditions of Carriage, FAQ's, Terms and Conditions
+            </h5>
+          </div>
+        </div>
+    </div>
+
+
+      <!-- Slider -->
+
+      <div id="menu" class="sidemenu">
+        <!-- <a href="#" id="closebtn">&times;</a> -->
+        <div id="sbheader">
+          <div id="closebtn">
+            <i class="fas fa-caret-left closeIcon"></i>
+          </div>
+          <div><h2>BOOKING SUMMARY</h2></div>
+        </div>
+        <div id="sbmain">
+          <div id="flightdetails">
+            <div class="div1">
+              <span id="flightdate">20<br/>22</span>
+            </div>
+            <div class="div2">
+              <div id="flightid"><i class="fas fa-plane-departure"></i>AI887</div>
+              <div>
+                <span id="srctime">16:10</span>
+                <img
+                  src="./images/pament-line.png"
+                  alt=""
+                />
+                <span id="desttime">23:55</span>
+              </div>
+              <div>
+                <span id="src">ST</span>
+                <span id="dest">EN</span>
+              </div>
+            </div>
+          </div>
+          <div id="pricedetails">
+            <div>
+              <div><h2>FARES & FEES</h2></div>
+              <div><h4>Fares</h4></div>
+              <div><h4>Charge and Fees</h4></div>
+              <div><h4>Taxes</h4></div>
+            </div>
+            <div id="div2">
+              <div>
+                <h6><a href="">View Breakdown</a></h6>
+              </div>
+              <div><span id="fares">INR <input value="3000" id="s1"/></span></div>
+              <div><span id="chargeandfees">INR <input value="600" id="s2"/></span></div>
+              <div><span id="taxes">INR <input value="330" id="s3"/></span></div>
+            </div>
+          </div>
+        </div>
+  
+        <div id="sbfooter">
+          <div class="div1">
+            <h3>BOOKING<br />TOTAL</h3>
+          </div>
+          <div class="div2">
+            <div>INR</div>
+            <div id="total"><input value="0" id="slidetotal" /></div>
+          </div>
+        </div>
+      </div>
+  
+    <script src="./flight.js"></script>
+</body>
+
+</html>

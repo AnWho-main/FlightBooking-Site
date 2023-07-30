@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ticket.css" />
+    <link rel="stylesheet" href="./preloader.css">
+    <title>ticket</title>
+  </head>
+  <body onload="data()">
+    <div class="pre-loader">
+      <div>
+        <img src="./images/p1.jpg" alt="" />
+      </div>
+      <div id="gif">
+        <img src="./images/808.gif" alt="" />
+        <h2>Please wait your transaction is being processed.</h2>
+      </div>
+    </div>
+    <script src="./preloader.js"></script>
+    <div class="container">
+      <div class="airindiaLogo"><img src="./images/t3.jpg" alt="" /></div>
+      <div class="ack">
+        <h2>Congratulations! Your Ticket is Booked.</h2>
+        <img src="./images/t2.gif" alt="" />
+      </div>
+      <div class="ticketdetails">
+        <div class="generaldetails">
+          <div class="div1">
+            <div class="imgdiv">
+              <img src="./images/t1.jpg" alt="" />
+            </div>
+            <div class="infodiv">
+              <span
+                ><input
+                  type="text"
+                  id="source"
+                  disabled
+                  placeholder="Source" /></span
+              ><br />
+              <span id="to">to</span><br />
+              <span
+                ><input
+                  type="text"
+                  name=""
+                  id="destination"
+                  placeholder="destination"
+                  disabled
+              /></span>
+            </div>
+          </div>
+          <div class="div2">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="na" disabled /><br />
+            <label for="seatno">Seat Number:</label>
+            <input type="text" name="seatno" id="seatno" value="3B" disabled /><br />
+            <label for="time">Date:</label>
+            <input type="text" name="time" id="time" disabled /><br />
+          </div>
+        </div>
+        <div class="pricedetails">
+          <div class="ailogo"><img src="./images/t3.jpg" alt="" /></div>
+          <div class="priceall">
+            <label for="fares">Fares: INR</label>
+            <input type="text" name="fares" id="fares" disabled /><br />
+            <label for="fees">Charges and Fees: INR</label>
+            <input type="text" name="fees" id="fees" disabled /><br />
+            <label for="taxes">Taxes: INR</label>
+            <input type="text" name="taxes" id="taxes" disabled /><br />
+          </div>
+          <div class="pricetotal">
+            <label for="total"><span>INR</span></label>
+            <input type="text" name="total" id="total" disabled />
+          </div>
+        </div>
+      </div>
+      <div><button class="btn" onclick="home()">Go to HomePage</button>
+      <button class="cancelation" onclick="refund()">Cancel Ticket</button>
+      </div>
+    </div>
+
+    <script src="ticket.js"></script>
+  </body>
+</html>

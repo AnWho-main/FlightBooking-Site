@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./seats.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;500&family=Varela&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./preloader.css">
+    <title>seats</title>
+  </head>
+  <body onload="store();">
+    <div class="pre-loader">
+      <div>
+        <img src="./images/p1.jpg" alt="" />
+      </div>
+      <div id="gif">
+        <img src="./images/808.gif" alt="" />
+        <h2>Please Wait we are processing your request</h2>
+      </div>
+    </div>
+    <script src="./preloader.js"></script>
+    <div class="search">
+      <div class="logo">
+        <img src="./images/logoMain.png" alt="please check!" />
+      </div>
+
+      <!-- Menu bar -->
+      <div class="menu-bar">
+        <div class="list">
+          <ul type="none">
+            <li class="active">SEARCH</li>
+            <li class="active">FLIGHT</li>
+            <li class="active">PASSENGERS</li>
+            <li class="active">SEATS</li>
+            <li>PAYMENT</li>
+            <li id="trip">
+              TRIP SUMMARY <br />INR<b><input value="0" id="tripValue"/> <i class="fas fa-angle-down"></i> </b>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header">
+          <div class="headerblank"></div>
+          <div class="seattitle">
+            <img
+              src="./images/outline_airline_seat_recline_normal_black_24dp.png"
+              alt=""
+            />
+            <span>SEAT SELECT</span>
+          </div>
+          <div class="skipbutton">
+            <button type="submit" onclick="next()">SKIP SEAT SELECTION</button>
+          </div>
+          <div class="headerblank2"></div>
+        </div>
+        <div class="blank"></div>
+        <div class="blank"></div>
+
+        <div class="main">
+          <div class="name">
+            <span><input value="UNKNOWN" id="nam" /></span>
+          </div>
+          <div class="info">
+            <div>
+              <span><input value="0000-00-00" id="flightdate"/></span>
+              <span id="flight">A1 638</span>
+              <span><input value="Source" id="flightsrc"/></span> to
+              <span><input value="Destination" id="flightdest" /></span>
+            </div>
+            <div><a href="">NEXT</a></div>
+          </div>
+          <div class="seatinfo">
+            <h4>SEAT SELECTION</h4>
+            <ul>
+              <li>
+                <div class="seat selected"><i class="fas fa-circle"></i></div>
+                Selected Seat
+              </li>
+              <li>
+                <div class="seat frontrow"><i class="fas fa-circle"></i></div>
+                Front Row
+              </li>
+              <li>
+                <div class="seat window"><i class="fas fa-circle"></i></div>
+                Window or Aisle
+              </li>
+              <li>
+                <div class="seat exitrow"><i class="fas fa-circle"></i></div>
+                Exit Row Seats
+              </li>
+              <li>
+                <div class="seat booked"><i class="fas fa-times"></i></div>
+                Occupied
+              </li>
+              <li>
+                <div class="seat bassinet">
+                  <i class="fas fa-baby-carriage"></i>
+                </div>
+                Bassinet
+              </li>
+            </ul>
+          </div>
+          <div class="seatarrangement">
+            <div class="seatcontainer">
+              <div class="seatsection s1">
+                <div class="seat frontrow" id="1A">1A</div>
+                <div class="seat frontrow" id="1B">1B</div>
+                <div class="seat booked" id="1C">1C</div>
+                <div class="seat booked" id="2A">2A</div>
+                <div class="seat" id="2B">2B</div>
+                <div class="seat window" id="2C">2C</div>
+                <div class="seat window" id="3A">3A</div>
+                <div class="seat" id="3B">3B</div>
+                <div class="seat window" id="3C">3C</div>
+                <div class="seat window" id="4A">4A</div>
+                <div class="seat" id="4B">4B</div>
+                <div class="seat window" id="4C">4C</div>
+                <div class="seat booked" id="5A">5A</div>
+                <div class="seat" id="5B">5B</div>
+                <div class="seat window" id="5C">5C</div>
+                <div class="seat window" id="6A">6A</div>
+                <div class="seat booked" id="6B">6B</div>
+                <div class="seat booked" id="6C">6C</div>
+              </div>
+
+              <div class="seatsection s2">
+                <div class="seat frontrow" id="1D">1D</div>
+                <div class="seat frontrow" id="1E">1E</div>
+                <div class="seat frontrow" id="1F">1F</div>
+                <div class="seat window" id="2D">2D</div>
+                <div class="seat" id="2E">2E</div>
+                <div class="seat window" id="2F">2F</div>
+                <div class="seat window" id="3D">3D</div>
+                <div class="seat" id="3E">3E</div>
+                <div class="seat window" id="3F">3F</div>
+                <div class="seat window" id="4D">4D</div>
+                <div class="seat" id="4E">4E</div>
+                <div class="seat window" id="4F">4F</div>
+                <div class="seat window" id="5D">5D</div>
+                <div class="seat" id="5E">5E</div>
+                <div class="seat window" id="5F">5F</div>
+                <div class="seat window" id="6D">6D</div>
+                <div class="seat" id="6E">6E</div>
+                <div class="seat window" id="6F">6F</div>
+              </div>
+
+              <div class="seatsection s3">
+                <div class="seat exitrow" id="7A">7A</div>
+                <div class="seat exitrow" id="7B">7B</div>
+                <div class="seat exitrow" id="7C">7C</div>
+                <div class="seat window" id="8A">8A</div>
+                <div class="seat" id="8B">8B</div>
+                <div class="seat window" id="8C">8C</div>
+                <div class="seat window" id="9A">9A</div>
+                <div class="seat" id="9B">9B</div>
+                <div class="seat window" id="9C">9C</div>
+                <div class="seat window" id="10A">10A</div>
+                <div class="seat" id="10B">10B</div>
+                <div class="seat window" id="10C">10C</div>
+                <div class="seat window" id="11A">11A</div>
+                <div class="seat" id="11B">11B</div>
+                <div class="seat window" id="11C">11C</div>
+                <div class="seat window" id="12A">12A</div>
+                <div class="seat" id="12B">12B</div>
+                <div class="seat window" id="12C">12C</div>
+                <div class="seat window" id="13A">13A</div>
+                <div class="seat" id="13B">13B</div>
+                <div class="seat window" id="13C">13C</div>
+                <div class="seat window" id="14A">14A</div>
+                <div class="seat" id="14B">14B</div>
+                <div class="seat window" id="14C">14C</div>
+                <div class="seat window" id="15A">15A</div>
+                <div class="seat" id="15B">15B</div>
+                <div class="seat window" id="15C">15C</div>
+              </div>
+
+              <div class="seatsection s4">
+                <div class="seat exitrow" id="7D">7D</div>
+                <div class="seat exitrow" id="7E">7E</div>
+                <div class="seat exitrow" id="7F">7F</div>
+                <div class="seat window" id="8D">8D</div>
+                <div class="seat" id="8E">8E</div>
+                <div class="seat window" id="8F">8F</div>
+                <div class="seat window" id="9D">9D</div>
+                <div class="seat" id="9E">9E</div>
+                <div class="seat window" id="9F">9F</div>
+                <div class="seat window" id="10D">10D</div>
+                <div class="seat" id="10E">10E</div>
+                <div class="seat window" id="10F">10F</div>
+                <div class="seat window" id="11D">11D</div>
+                <div class="seat" id="11E">11E</div>
+                <div class="seat window" id="11F">11F</div>
+                <div class="seat window" id="12D">12D</div>
+                <div class="seat" id="12E">12E</div>
+                <div class="seat window" id="12F">12F</div>
+                <div class="seat window" id="13D">13D</div>
+                <div class="seat" id="13E">13E</div>
+                <div class="seat window" id="13F">13F</div>
+                <div class="seat window" id="14D">14D</div>
+                <div class="seat" id="14E">14E</div>
+                <div class="seat window" id="14F">14F</div>
+                <div class="seat window" id="15D">15D</div>
+                <div class="seat" id="15E">15E</div>
+                <div class="seat booked" id="15F">15F</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blank2"></div>
+        <div class="blank2"></div>
+        <div class="footer">
+          <div class="footerblank"></div>
+          <div class="gobackbutton">
+            <button type="submit" onclick="pre()">GO BACK</button>
+          </div>
+          <div class="continuebutton">
+            <button type="submit" onclick="next()">CONTINUE</button>
+          </div>
+          <div class="footerblank2"></div>
+        </div>
+        <div class="footer2">
+          <div>
+            <h5>
+              Copyright © 2022 Air India Ltd. All rights reserved. Use of this
+              website indicates your compliance with our Privacy Policy,
+              Conditions of Carriage, FAQ's, Terms and Conditions
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./seats.js"></script>
+  </body>
+</html>
